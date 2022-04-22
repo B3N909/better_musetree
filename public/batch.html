@@ -15,7 +15,21 @@
     <input type="file" style="display:none" id="midiFile"/>
 
     <div class="controller">
-        <button id="importMIDI">Import MIDI</button>
+        <select id="song">
+            <optgroup label="Tools">
+                <option value="all">All Songs</option>
+            </optgroup>
+            <optgroup label="Storage">
+                <option value="BohemianRhapsody.mid">BohemianRhapsody.mid</option>
+                <option value="Californication.mid">Californication.mid</option>  
+                <option value="carlyraejepsen-call_me_maybe.mid">carlyraejepsen-call_me_maybe.mid</option>
+                <option value="HotelCalifornia.mid">HotelCalifornia.mid</option>
+                <option value="mgmt-time_to_pretend.mid">mgmt-time_to_pretend.mid</option>
+                <option value="pinkfloyd-wish_you_were_here.mid">pinkfloyd-wish_you_were_here.mid</option>
+                <option value="Clocks.mid">Clocks.mid</option>
+            </optgroup>
+        </select>
+
         <select id="genre">
             <optgroup label="Standard">
                 <option value="chopin">Chopin</option>
@@ -35,42 +49,120 @@
                 <option value="bluegrass">Bluegrass</option>
                 <option value="tchaikovsky">Tchaikovsky</option>
             </optgroup>
+
+
             <optgroup label="Experimental">
                 <option value="<start>">&lt;start&gt;</option>
                 <option value="<random>">Random</option>
             </optgroup>
+
+            <optgroup label="Experimental">
+            </optgroup>
+
+            
+            <optgroup label="Heavy Metal">
+                <option value="metallica">Metallica</option>
+            </optgroup>
+
+            <optgroup label="Pianoist">
+                <option value="liszt">Frank Liszt</option>
+            </optgroup>
+
+            <optgroup label="Alternative Rock">
+                <option value="weezer">Weezer</option>
+            </optgroup>
+
+            <optgroup label="Pop Rock">
+                <option value="paulmccartney">Paul McCartney</option>
+                <option value="blink-182">Blink-182</option>
+                <option value="blink182">Blink-182-2</option>
+                <option value="lynyrdskynyrd">Lynyrd Skynyrd</option>
+                <option value="pinkfloyd">Pink Floyd</option>
+                <option value="thedoors">The Doors</option>
+                <option value="redhotchilipeppers">Red Hot Chilli Peppers</option>
+            </optgroup>
+
+            <optgroup label="Rock">
+                <option value="nirvana">Nirvana</option>
+                <option value="greenday">Greenday</option>
+                <option value="foofighters">Foo-Fighters</option>
+                <option value="therollingstones">The Rolling Stones</option>
+                <option value="fleetwoodmac">Fleetwood Mac</option>
+                <option value="zappa">Frank Zappa</option>
+                <option value="rem">R.E.M.</option>
+                <option value="blacksabbath">Black Sabbath</option>
+                <option value="thebeachboys">The Beach Boys</option>
+                <option value="everything">Everything Everything</option>
+                <option value="thecranberries">The Cranberries</option>
+                <option value="traffic">Traffic</option>
+                <option value="nineinchnails">Nine Inch Nails</option>
+                <option value="thepretenders">The Pretenders</option>
+                <option value="sugarray">Sugar Ray</option>
+                <option value="grandfunkrailroad">Grand Funk Railroad</option>
+                <option value="foreigner">Foreigner</option>
+                <option value="benfoldsfive">Ben Folds Five</option>
+                <option value="smashmouth">Smash Mouth</option>
+                <option value="oasis">Oasis</option>
+            </optgroup>
+
+            <optgroup label="R&B">
+                <option value="kool &amp; the gang">Kool &amp; the Gang</option>
+                <option value="tlc">TLC</option>
+                <option value="allsaints">All Saints</option>
+            </optgroup>
+
+            <optgroup label="Blues">
+                <option value="blues">Blues</option>
+            </optgroup>
+
+            <optgroup label="International">
+                <option value="indian">Indian</option>
+                <option value="scottish">Scottish</option>
+                <option value="irish">Irish</option>
+                <option value="african">African</option>
+                <option value="latin">Latin</option>
+                <option value="kpop">K-Pop</option>
+                <option value="chinese">Chinese</option>
+                <option value="arabic">Arabic</option>
+                <option value="christmas">Christmas</option>
+            </optgroup>
+
+            <optgroup label="Rap">
+                <option value="rap">rap</option>
+                <option value="drdre">drdre</option>
+                <option value="eminem">eminem</option>
+            </optgroup>
+
+            <optgroup label="Punk">
+                <option value="punk">Punk</option>
+            </optgroup>
+
+            <optgroup label="Dance">
+                <option value="dance">Dance</option>
+            </optgroup>
+
+            <optgroup label="Jazz">
+                <option value="ellington">Duke Ellington</option>
+            </optgroup>
+
             <optgroup label="Extra">
-                <option value="liszt">liszt</option>
-                <option value="everything">everything</option>
-                <option value="ragtime">ragtime</option>
-                <option value="andrehazes">andrehazes</option>
-                <option value="cocciante">cocciante</option>
-                <option value="thecranberries">thecranberries</option>
-                <option value="ligabue">ligabue</option>
-                <option value="metallica">metallica</option>
-                <option value="traffic">traffic</option>
-                <option value="philcollins">philcollins</option>
-                <option value="nineinchnails">nineinchnails</option>
-                <option value="thepretenders">thepretenders</option>
-                <option value="sugarray">sugarray</option>
-                <option value="grandfunkrailroad">grandfunkrailroad</option>
+                <option value="ragtime">Ragtime Musical</option>
+
+                <option value="andrehazes">Andre Hazes</option>
+                <option value="cocciante">Riccardo Coccainte</option>
+                <option value="ligabue">Luciano Ligabue</option>
+                <option value="philcollins">Phil Collins</option>
+                <option value="donnasummer">Donna Summer</option>
+                <option value="bjork">Björk</option>
+                <option value="mariahcarey">Mariah Carey</option>
+
+
                 <option value="ron">ron</option>
-                <option value="ellington">ellington</option>
-                <option value="fleetwoodmac">fleetwoodmac</option>
-                <option value="thebeachboys">thebeachboys</option>
-                <option value="kool &amp; the gang">kool &amp; the gang</option>
-                <option value="foreigner">foreigner</option>
-                <option value="tlc">tlc</option>
+
                 <option value="scottjames">scottjames</option>
-                <option value="benfoldsfive">benfoldsfive</option>
-                <option value="smashmouth">smashmouth</option>
-                <option value="oasis">oasis</option>
-                <option value="allsaints">allsaints</option>
-                <option value="donnasummer">donnasummer</option>
-                <option value="weezer">weezer</option>
-                <option value="bjork">bjork</option>
-                <option value="mariahcarey">mariahcarey</option>
+                
                 <option value="berte">berte</option>
+
                 <option value="cheaptrick">cheaptrick</option>
                 <option value="caroleking">caroleking</option>
                 <option value="thecars">thecars</option>
@@ -84,7 +176,6 @@
                 <option value="jimmybuffett">jimmybuffett</option>
                 <option value="lobo">lobo</option>
                 <option value="badcompany">badcompany</option>
-                <option value="eminem">eminem</option>
                 <option value="creedenceclearwaterrevival">creedenceclearwaterrevival</option>
                 <option value="deeppurple">deeppurple</option>
                 <option value="shearinggeorge">shearinggeorge</option>
@@ -133,10 +224,7 @@
                 <option value="brucespringsteen">brucespringsteen</option>
                 <option value="michaelgeorge">michaelgeorge</option>
                 <option value="blondie">blondie</option>
-                <option value="pinkfloyd">pinkfloyd</option>
                 <option value="oldfieldmike">oldfieldmike</option>
-                <option value="redhotchilipeppers">redhotchilipeppers</option>
-                <option value="therollingstones">therollingstones</option>
                 <option value="morandi">morandi</option>
                 <option value="heart">heart</option>
                 <option value="robertaflack">robertaflack</option>
@@ -224,11 +312,9 @@
                 <option value="chopinfrederic">chopinfrederic</option>
                 <option value="talkingheads">talkingheads</option>
                 <option value="themonkees">themonkees</option>
-                <option value="rem">rem</option>
                 <option value="jeanmicheljarre">jeanmicheljarre</option>
                 <option value="michelezarrillo">michelezarrillo</option>
                 <option value="eurythmics">eurythmics</option>
-                <option value="thedoors">thedoors</option>
                 <option value="guesswho">guesswho</option>
                 <option value="miller">miller</option>
                 <option value="thefourseasons">thefourseasons</option>
@@ -245,13 +331,11 @@
                 <option value="claudedebussy">claudedebussy</option>
                 <option value="gilbert &amp; sullivan">gilbert &amp; sullivan</option>
                 <option value="chakakhan">chakakhan</option>
-                <option value="nirvana">nirvana</option>
                 <option value="garbage">garbage</option>
                 <option value="andreabocelli">andreabocelli</option>
                 <option value="johnnyrivers">johnnyrivers</option>
                 <option value="emerson, lake &amp; palmer">emerson, lake &amp; palmer</option>
                 <option value="theallmanbrothersband">theallmanbrothersband</option>
-                <option value="zappa">zappa</option>
                 <option value="boston">boston</option>
                 <option value="mango">mango</option>
                 <option value="barbrastreisand">barbrastreisand</option>
@@ -274,13 +358,10 @@
                 <option value="joecocker">joecocker</option>
                 <option value="jimcroce">jimcroce</option>
                 <option value="bobmarley">bobmarley</option>
-                <option value="blacksabbath">blacksabbath</option>
                 <option value="stonetemplepilots">stonetemplepilots</option>
                 <option value="silverchair">silverchair</option>
-                <option value="paulmccartney">paulmccartney</option>
                 <option value="blur">blur</option>
                 <option value="nek">nek</option>
-                <option value="greenday">greenday</option>
                 <option value="thepolice">thepolice</option>
                 <option value="depechemode">depechemode</option>
                 <option value="rageagainstthemachine">rageagainstthemachine</option>
@@ -372,11 +453,8 @@
                 <option value="howardcarpendale">howardcarpendale</option>
                 <option value="thesupremes">thesupremes</option>
                 <option value="villagepeople">villagepeople</option>
-                <option value="blink-182">blink-182</option>
                 <option value="jacksonbrowne">jacksonbrowne</option>
                 <option value="sade">sade</option>
-                <option value="lynyrdskynyrd">lynyrdskynyrd</option>
-                <option value="foofighters">foofighters</option>
                 <option value="2unlimited">2unlimited</option>
                 <option value="battisti">battisti</option>
                 <option value="hall &amp; oates">hall &amp; oates</option>
@@ -403,7 +481,7 @@
                 <option value="queen">queen</option>
                 <option value="soundgarden">soundgarden</option>
                 <option value="abba">abba</option>
-                <option value="drdre">drdre</option>
+
                 <option value="defleppard">defleppard</option>
                 <option value="dominofats">dominofats</option>
                 <option value="realmccoy">realmccoy</option>
@@ -412,37 +490,26 @@
                 <option value="spinners">spinners</option>
                 <option value="arethafranklin">arethafranklin</option>
                 <option value="reospeedwagon">reospeedwagon</option>
-                <option value="indian">indian</option>
                 <option value="movie">movie</option>
-                <option value="scottish">scottish</option>
-                <option value="irish">irish</option>
-                <option value="african">african</option>
                 <option value="taylorswift">taylorswift</option>
                 <option value="shakira">shakira</option>
-                <option value="blues">blues</option>
-                <option value="latin">latin</option>
+
+
                 <option value="katyperry">katyperry</option>
                 <option value="world">world</option>
-                <option value="kpop">kpop</option>
                 <option value="africandrum">africandrum</option>
                 <option value="michaelbuble">michaelbuble</option>
                 <option value="rihanna">rihanna</option>
                 <option value="gospel">gospel</option>
                 <option value="beyonce">beyonce</option>
-                <option value="chinese">chinese</option>
-                <option value="arabic">arabic</option>
                 <option value="adele">adele</option>
                 <option value="kellyclarkson">kellyclarkson</option>
                 <option value="theeagles">theeagles</option>
                 <option value="handel">handel</option>
                 <option value="rachmaninov">rachmaninov</option>
                 <option value="schumann">schumann</option>
-                <option value="christmas">christmas</option>
-                <option value="dance">dance</option>
-                <option value="punk">punk</option>
                 <option value="natl_anthem">natl_anthem</option>
                 <option value="brahms">brahms</option>
-                <option value="rap">rap</option>
                 <option value="ravel">ravel</option>
                 <option value="burgmueller">burgmueller</option>
                 <option value="other">other</option>
@@ -626,7 +693,6 @@
                 <option value="thecarpenters">thecarpenters</option>
                 <option value="elo">elo</option>
                 <option value="nightwish">nightwish</option>
-                <option value="blink182">blink182</option>
                 <option value="emersonlakeandpalmer">emersonlakeandpalmer</option>
                 <option value="tvthemes">tvthemes</option>
             </optgroup>
@@ -646,7 +712,31 @@
         </p>
     </div>
 
-    <div id="tree-simple" style="width:100vw; height: calc(100vh - 125px)"> </div>
+    <div class="controller">
+        <p>
+            Song length: <input id="songLength" value="45" type="number">
+			MIDI's to Generate per Song: <input id="generatePerSong" value="4" type="number">
+			<button id="startGenerating">Generate Batch</button>
+        </p>
+    </div>
+
+    <table>
+        <tr>
+          <th>Input</th>
+          <th>Length</th>
+          <th>Actions</th>
+        </tr>
+        <!-- <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td> -->
+        </tr>
+    </table>
 
     <script src="lib/similarity.js"></script>
     <script src="lib/jquery.js"></script>
@@ -656,6 +746,6 @@
     <script src="lib/raphael.js"></script>
     <script src="lib/Treant.js"></script>
     <script src="lib/midiFile.js"></script>
-	<script src="index.js"></script>
+	<script src="batch.js"></script>
   </body>
 </html>
